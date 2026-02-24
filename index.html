@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasmine Dagpin | Web Designer</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <!-- 1. Animated Background -->
+    <div class="background-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <div class="brand">Jasmine<span>.Design</span></div>
+            
+            <!-- Desktop Menu -->
+            <div class="nav-links" id="navLinks">
+                <a href="#about" onclick="closeMenu()">About</a>
+                <a href="#education" onclick="closeMenu()">Education</a>
+                <a href="#skills" onclick="closeMenu()">Skills</a>
+                <a href="#contact" onclick="closeMenu()">Contact</a>
+            </div>
+
+            <!-- Mobile Hamburger -->
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-text hidden">
+                <div class="badge">✨ Expert in minimal Optimize</div>
+                <h1>Hi, I'm <br><span>Jasmine Dagpin</span></h1>
+                <p class="subtitle" id="typing-text"></p>
+                <div style="display: flex; gap: 1rem; justify-content: flex-start;">
+                    <a href="#contact" class="btn">Hire Me</a>
+                    <a href="#skills" class="btn" style="background: transparent; border: 1px solid rgba(255,255,255,0.2); box-shadow: none;">My Skills</a>
+                </div>
+            </div>
+            <div class="hero-img-container hidden">
+                <div class="img-wrapper">
+                    <!-- Profile Image -->
+                    <img src="https://z-cdn-media.chatglm.cn/files/ff51b684-a347-467b-a65a-8ad6bb89bcc2.png?auth_key=1871905709-1fedddaa364b4f4481109f14efba4fa2-0-5cb45a2552ca94fa6a035c69896fa970" alt="Jasmine Dagpin">
+                </div>
+            </div>
+        </header>
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2 class="hidden">About Me</h2>
+            <div class="glass-card hidden">
+                <p class="bio-text">
+                    I am a passionate and innovative <strong>Web Designer</strong> dedicated to crafting digital experiences that are not only visually stunning but also highly functional. With a keen eye for detail and a commitment to excellence, I specialize in creating user-centric designs that solve real-world problems. I believe in the power of minimalism and clean code to deliver optimized solutions. Whether it's building a responsive layout or refining the user interface, I approach every project with creativity and precision to ensure the best possible outcome.
+                </p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2 class="hidden">Educational Attainment</h2>
+            <div class="education-list">
+                <div class="edu-item hidden">
+                    <div class="edu-icon">🎓</div>
+                    <div class="edu-details">
+                        <h4>College</h4>
+                        <p>[Name of University/College] - Bachelor's Degree in IT/Web Design</p>
+                    </div>
+                </div>
+                <div class="edu-item hidden">
+                    <div class="edu-icon">🏫</div>
+                    <div class="edu-details">
+                        <h4>High School</h4>
+                        <p>[Name of High School] - Secondary Education</p>
+                    </div>
+                </div>
+                <div class="edu-item hidden">
+                    <div class="edu-icon">🎒</div>
+                    <div class="edu-details">
+                        <h4>Elementary</h4>
+                        <p>[Name of Elementary School] - Primary Education</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 class="hidden">My Skills</h2>
+            <div class="glass-card hidden">
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="color:var(--text-muted); margin-bottom:1rem; text-transform:uppercase; letter-spacing:1px; font-size:0.8rem;">Attitude</h4>
+                    <div class="tags">
+                        <span class="tag highlight">1. Willing Learn</span>
+                        <span class="tag highlight">2. Willing Adapt</span>
+                        <span class="tag">Creative Problem Solving</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="color:var(--text-muted); margin-bottom:1rem; text-transform:uppercase; letter-spacing:1px; font-size:0.8rem;">Technical</h4>
+                    <div class="tags">
+                        <span class="tag highlight" style="color: #d8b4fe; border-color: #d8b4fe; background: rgba(216, 180, 254, 0.1);">Hardening Coding (Python)</span>
+                        <span class="tag">Expert in minimal Optimize</span>
+                        <span class="tag">UI/UX Design</span>
+                        <span class="tag">HTML5 / CSS3</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="hidden">Selected Works</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div class="glass-card hidden" style="padding:0; overflow:hidden; border:none;">
+                    <div style="height:200px; background:linear-gradient(45deg, #FF9A9E 0%, #FECFEF 99%, #FECFEF 100%);"></div>
+                    <div style="padding:1.5rem;">
+                        <h4 style="color:var(--primary); margin-bottom:0.5rem;">Portfolio Design</h4>
+                        <p style="color:var(--text-muted); font-size:0.9rem;">Minimalist personal website.</p>
+                    </div>
+                </div>
+                <div class="glass-card hidden" style="padding:0; overflow:hidden; border:none;">
+                    <div style="height:200px; background:linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);"></div>
+                    <div style="padding:1.5rem;">
+                        <h4 style="color:var(--primary); margin-bottom:0.5rem;">Python Backend</h4>
+                        <p style="color:var(--text-muted); font-size:0.9rem;">Hardened coding structures.</p>
+                    </div>
+                </div>
+                <div class="glass-card hidden" style="padding:0; overflow:hidden; border:none;">
+                    <div style="height:200px; background:linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);"></div>
+                    <div style="padding:1.5rem;">
+                        <h4 style="color:var(--primary); margin-bottom:0.5rem;">Certificates</h4>
+                        <p style="color:var(--text-muted); font-size:0.9rem;">Web Design & Development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION (Functional) -->
+        <section id="contact">
+            <h2 class="hidden">Get In Touch</h2>
+            <div class="contact-wrapper hidden">
+                <p style="margin-bottom: 2rem; color: var(--text-muted);">Interested in working together? Send me a message!</p>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn" id="submitBtn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="brand">Jasmine<span>.Design</span></div>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">&copy; 2023 Jasmine Dagpin. Crafted with 💜.</p>
+        </footer>
+    </div>
+
+    <!-- Toast Notification Element -->
+    <div id="toast" class="toast">Message Sent Successfully! ✨</div>
+
+    <script>
+        // 1. MOBILE MENU TOGGLE
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        function closeMenu() {
+            navLinks.classList.remove('active');
+        }
+
+        // 2. SCROLL ANIMATIONS (Intersection Observer)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+
+        // 3. TYPING EFFECT
+        const textElement = document.getElementById('typing-text');
+        const phrases = ["A 20-year-old Web Designer", "Expert in minimal Optimize", "Willing to Learn & Adapt"];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typeSpeed = 100;
+
+        function type() {
+            const currentPhrase = phrases[phraseIndex];
+            
+            if (isDeleting) {
+                textElement.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+                typeSpeed = 50;
+            } else {
+                textElement.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+                typeSpeed = 100;
+            }
+
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                isDeleting = true;
+                typeSpeed = 2000; // Pause at end
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                typeSpeed = 500;
+            }
+
+            setTimeout(type, typeSpeed);
+        }
+
+        document.addEventListener('DOMContentLoaded', type);
+
+        // 4. CONTACT FORM FUNCTIONALITY
+        const contactForm = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const toast = document.getElementById('toast');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Stop page reload
+
+            // Simulate sending
+            const originalText = submitBtn.innerText;
+            submitBtn.innerText = "Sending...";
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = "0.7";
+
+            setTimeout(() => {
+                // Show success message
+                showToast();
+                
+                // Reset form
+                contactForm.reset();
+                submitBtn.innerText = originalText;
+                submitBtn.disabled = false;
+                submitBtn.style.opacity = "1";
+            }, 1500);
+        });
+
+        function showToast() {
+            toast.className = "toast show";
+            setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
+        }
+    </script>
+</body>
+</html>
